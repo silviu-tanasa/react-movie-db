@@ -1,0 +1,9 @@
+.movies-container {
+    padding: 10px 0;
+}
+.movie-list {
+    padding: 10px;
+}
+.movie-item {
+    width: 50%;
+}

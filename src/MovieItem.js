@@ -14,7 +14,7 @@ const MovieItem = (props) => {
                 {props.year}
             </Typography>
             <Typography component="p">
-                {props.desc}
+                {props.description}
             </Typography>
         </CardContent>
     </Card>

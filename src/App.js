@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import MovieList from './MovieList';
 import axios from 'axios';
+import SearchMovie from './SearchMovie'
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <SearchMovie />
         <MovieList movies={this.state.movies}/>
       </div>
     );

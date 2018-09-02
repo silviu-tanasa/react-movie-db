@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
+
 import MovieItem from './MovieItem';
 import './MoviesList.css';
 
@@ -18,9 +18,6 @@ function MovieList(props){
                     )
                     : "No movies found"}
                 </div>
-               <Button variant="contained" color="primary">
-                    Add New Movie
-                </Button> 
             </div>
         ) 
 }

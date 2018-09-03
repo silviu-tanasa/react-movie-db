@@ -9,16 +9,6 @@
 .movie-item {
     width: 48%;
     margin: 1%;
+    flex: 1 1 250px;
 }
-.search-component {
-    margin: 2% 2% 0 2%;
-    display: flex;
-    flex-wrap: nowrap;
-}
-.search-component .search {
-    width: 75%;
-    margin-right: 5%;
-}
-.search-component .search-btn {
-    width: 20%;
-}
+

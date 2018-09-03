@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SearchBar from './components/SearchBar'
 import MovieItem from './MovieItem';
 import './MoviesList.css';
 
@@ -7,6 +7,9 @@ function MovieList(props){
     const { movies = [] } = props;
         return(
             <div className="movie-list">
+                
+                <SearchBar />
+                
                 <div className="movies-container">
                 { movies.length > 0
                    ? movies.map((movie, index) =>

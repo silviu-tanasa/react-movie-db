@@ -1,0 +1,11 @@
+.search-component {
+    margin: 2% 2% 0 2%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.search-component .search {
+    width: 100%;
+}
+.search-result {
+    margin: 2% 1% 2% 1%;
+}

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import MovieList from './MovieList';
-import axios from 'axios';
-import SearchMovie from './SearchMovie'
+import { getMovies } from './Api'
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/movies').then(response => {
+    getMovies().then(response => {
         this.setState({ movies: response.data })
       })
   }
@@ -23,7 +22,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <SearchMovie />
+        
         <MovieList movies={this.state.movies}/>
       </div>
     );

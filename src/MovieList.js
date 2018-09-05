@@ -31,12 +31,13 @@ class MovieList extends Component {
         return(
             <div className="movie-list">
                 <div className="movies-container">
-                
+               
                 <MovieItem 
                     title="{this.state.listOfMovies}"
                     year="2001"
                     desc="A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
                 />
+            
                 </div>
                <Button variant="contained" color="primary">
                     Add New Movie

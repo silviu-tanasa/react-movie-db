@@ -1,29 +1,53 @@
 {
-    "movies": [
-      {
-        "title": "Lord of the Rings",
-        "year": "2001",
-        "desc": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
-      },
-      {
-        "title": "The Shawshank Redemption",
-        "year": "1994",
-        "desc": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
-      },
-      {
-        "title": "The Godfather",
-        "year": "1972",
-        "desc": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-      },
-      {
-        "title": "The Godfather: Part II",
-        "year": "1974",
-        "desc": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate."
-      },
-      {
-        "title": "The Dark Knight",
-        "year": "2008",
-        "desc": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice."
-      }
-    ]
-  }
+  "movies": [
+    {
+      "id": 0,
+      "name": "The Terminator",
+      "year": "1984",
+      "description": "A seemingly indestructible android is sent from 2029 to 1984 to assassinate a waitress, whose unborn son will lead humanity in a war against the machines, while a soldier from that war is sent to protect her at all costs.",
+      "image": "https://m.media-amazon.com/images/M/MV5BODE1MDczNTUxOV5BMl5BanBnXkFtZTcwMTA0NDQyNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Terminator 2: Judgment Day",
+      "year": "1991",
+      "description": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced and powerful cyborg.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY999_CR0,0,672,999_AL_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Matrix",
+      "year": "1999",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,665,1000_AL_.jpg"
+    },
+    {
+      "id": 3,
+      "name": "The Matrix Reloaded",
+      "year": "2003",
+      "description": "Neo and the rebel leaders estimate that they have 72 hours until 250,000 probes discover Zion and destroy it and its inhabitants. During this, Neo must decide how he can save Trinity from a dark fate in his dreams.",
+      "image": "https://m.media-amazon.com/images/M/MV5BYzM3OGVkMjMtNDk3NS00NDk5LWJjZjUtYTVkZTIyNmQxNDMxXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,684,1000_AL_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Alien",
+      "year": "1979",
+      "description": "After a space merchant vessel perceives an unknown transmission as a distress call, its landing on the source moon finds one of the crew attacked by a mysterious lifeform, and they soon realize that its life cycle has merely begun.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDNhN2IxZWItNGEwYS00ZDNhLThiM2UtODU3NWJlZjBkYjQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,681,1000_AL_.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Aliens",
+      "year": "1986",
+      "description": "Ellen Ripley is rescued by a deep salvage team after being in hypersleep for 57 years. The moon that the Nostromo visited has been colonized, but contact is lost. This time, colonial marines have impressive firepower, but will that be enough?",
+      "image": "https://m.media-amazon.com/images/M/MV5BYzVlMWViZGEtYjEyYy00YWZmLThmZGEtYmM4MDZlN2Q5MmRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,664,1000_AL_.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Predator",
+      "year": "1987",
+      "description": "A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.",
+      "image": "A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior."
+    }
+  ]
+}

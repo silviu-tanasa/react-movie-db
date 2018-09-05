@@ -1,9 +1,14 @@
 .movies-container {
     padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 .movie-list {
     padding: 10px;
 }
 .movie-item {
-    width: 50%;
+    width: 48%;
+    margin: 1%;
+    flex: 1 1 250px;
 }
+

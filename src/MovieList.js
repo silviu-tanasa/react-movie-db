@@ -1,35 +1,13 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import Button from '@material-ui/core/Button';
+import SearchBar from './components/SearchBar'
 import MovieItem from './MovieItem';
 import './MoviesList.css';
 
-class MovieList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            listOfMovies: []
-        };
-    }
-
-    componentDidMount() {
-        axios.get('http://localhost:3000/movies').then((response) => {
-            console.log(response.data);
-            this.setState({
-                listOfMovies: response.data,
-            });
-            
-        })
-    }
-
-    // listMovies() {
-    //     for(let i = 0; i < this.state.listOfMovies.length; i++)
-    //         console.log(this.state.listOfMovies[i].title)
-    // }
-
-    render() {
+function MovieList(props){
+    const { movies = [] } = props;
         return(
             <div className="movie-list">
+<<<<<<< HEAD
                 <div className="movies-container">
                
                 <MovieItem 
@@ -38,13 +16,23 @@ class MovieList extends Component {
                     desc="A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
                 />
             
+=======
+                
+                <SearchBar />
+                
+                <div className="movies-container">
+                { movies.length > 0
+                   ? movies.map((movie, index) =>
+                    <MovieItem
+                        title={movie.name}
+                        year={movie.year}
+                        description={movie.description}
+                        key={index} />
+                    )
+                    : "No movies found"}
+>>>>>>> c149b18ef4d67805c84162c9385a9aa378c5df61
                 </div>
-               <Button variant="contained" color="primary">
-                    Add New Movie
-                </Button> 
             </div>
-        )
-    }
-    
+        ) 
 }
 export default MovieList;

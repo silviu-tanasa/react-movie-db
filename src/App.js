@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import MovieList from './MovieList';
-import { getMovies } from './Api'
+import { getMovies, createMovie, deleteMovie } from './Api';
 
 class App extends Component {
   constructor(props) {
@@ -18,12 +18,33 @@ class App extends Component {
       })
   }
 
+  addMovie = (movie) => {
+    const newMovie = { 
+      ...movie,
+      id: movie.imdb_id,
+      name: movie.title
+    }
+    createMovie(newMovie).then(() => {
+      this.setState({
+        movies: [newMovie, ...this.state.movies]
+      })
+    })
+  }
+
+  deleteMovie = (movie) => {
+    console.log(movie)
+  }
+
   render() {
     return (
       <div>
         <Header />
         
-        <MovieList movies={this.state.movies}/>
+        <MovieList 
+          movies={this.state.movies} 
+          addMovie={this.addMovie}
+          deleteMovie={this.deleteMovie}
+          />
       </div>
     );
   }

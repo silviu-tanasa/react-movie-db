@@ -2,9 +2,10 @@ import axios from 'axios'
 import { IMDBApiKey } from "./AppConfig"
 
 const IMDBApiUrl = "http://imdbapi.net/api";
+const MovieApiUrl = "http://localhost:5000/movies"
 
 export function getMovies() {
-    return axios.get('http://localhost:5000/movies');
+    return axios.get(MovieApiUrl);
 }
 
 export function searchMovie(term) {
@@ -12,4 +13,12 @@ export function searchMovie(term) {
         key: IMDBApiKey,
         title: term
     })
+}
+
+export function createMovie(movie) {
+    return axios.post(MovieApiUrl, movie)
+}
+
+export function deleteMovie(movie) {
+    return axios.delete(`${MovieApiUrl}/${movie.id}`)
 }

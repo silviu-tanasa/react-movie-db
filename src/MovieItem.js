@@ -4,6 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 const MovieItem = (props) => {
+    const { title, year, description, deleteMovie } = props
     return (
     <Card className="movie-item">
         <CardContent>
@@ -17,7 +18,9 @@ const MovieItem = (props) => {
                 {props.description}
             </Typography>
         </CardContent>
+        
     </Card>
+    //add card action for delete option
 )
 }
 

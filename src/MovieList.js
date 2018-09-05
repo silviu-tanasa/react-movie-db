@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SearchBar from './components/SearchBar'
 import MovieItem from './MovieItem';
 import './MoviesList.css';
 
 function MovieList(props){
-    const { movies = [] } = props;
+    const { movies = [], addMovie, deleteMovie } = props;
         return(
             <div className="movie-list">
                 
-                <SearchBar />
+                <SearchBar addMovie = {addMovie} />
                 
                 <div className="movies-container">
                 { movies.length > 0
@@ -17,7 +17,9 @@ function MovieList(props){
                         title={movie.name}
                         year={movie.year}
                         description={movie.description}
-                        key={index} />
+                        key={index} 
+                        deleteMovie={deleteMovie}
+                        />
                     )
                     : "No movies found"}
                 </div>

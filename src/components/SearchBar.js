@@ -26,13 +26,13 @@ class SearchBar extends React.Component {
         event.preventDefault;
         searchMovie(this.state.searchTerm).then((response) => {
             this.setState({
-                results: response.data
+                results: [response.data]
             })
         });
     }
 
     addMovie = movie => {
-        
+        console.log(movie)
     }
 
     render() {
@@ -55,7 +55,7 @@ class SearchBar extends React.Component {
                     {results.length > 0 
                      ? results.map(movie => (
                         <SearchResult 
-                            key={movie.id} 
+                            key={movie.imdb_id} 
                             movie={movie} 
                             addMovie={this.addMovie}/>
                     ))

@@ -1,11 +1,13 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
+import ReactContainer from './components/RatingContainer';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
+import RatingContainer from './components/RatingContainer';
 
 const Placeholder = () => {
     return (
@@ -16,7 +18,7 @@ const Placeholder = () => {
   }
 
 const MovieItem = (props) => {
-    const { title, year, plot, url = '', deleteMovie } = props
+    const { title, year, plot, url = '', rating, deleteMovie } = props
 
     return (
     <Card className="movie-item">
@@ -24,7 +26,7 @@ const MovieItem = (props) => {
             <CardMedia
                 className="movie-poster"
                 image={url}
-                title="Alt text"
+                title={title}
                 component="img"
                 />
             ) : (
@@ -41,6 +43,7 @@ const MovieItem = (props) => {
                 {plot}
             </Typography>
         </CardContent>
+        <RatingContainer rating={rating}/>
         <CardActions>
             <Button onClick={() => deleteMovie(props.id)}>
                 <Icon>delete</Icon>

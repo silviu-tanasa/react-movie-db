@@ -13,8 +13,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "json-server --watch API/db.json  --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "launch": "npm-run-all --parallel server start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
   }
 }

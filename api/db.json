@@ -1,27 +1,6 @@
 {
   "movies": [
     {
-      "id": 0,
-      "name": "The Terminator",
-      "year": "1984",
-      "plot": "A seemingly indestructible android is sent from 2029 to 1984 to assassinate a waitress, whose unborn son will lead humanity in a war against the machines, while a soldier from that war is sent to protect her at all costs.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BODE1MDczNTUxOV5BMl5BanBnXkFtZTcwMTA0NDQyNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
-    },
-    {
-      "id": 1,
-      "name": "Terminator 2: Judgment Day",
-      "year": "1991",
-      "plot": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced and powerful cyborg.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY999_CR0,0,672,999_AL_.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Matrix",
-      "year": "1999",
-      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,665,1000_AL_.jpg"
-    },
-    {
       "imdb_id": "tt0018033",
       "title": "It",
       "year": "1927",
@@ -101,6 +80,60 @@
       "status": "true",
       "id": "tt0120685",
       "name": "Godzilla"
+    },
+    {
+      "imdb_id": "tt0002197",
+      "title": "Friends",
+      "year": "1912",
+      "rated": "",
+      "released": "23 Sep 1912",
+      "runtime": "17 min",
+      "genre": "Short, Western, Romance",
+      "director": "D.W. Griffith",
+      "writers": "D.W. Griffith",
+      "actors": "Mary Pickford , Henry B. Walthall , Lionel Barrymore",
+      "plot": "At the mining-camp of Golden Creek, the little orphan girl of the late proprietor of Golden Creek Inn is the pet of all the miners. Her father had long been their great friend and adviser, and hence his little daughter always commanded their greatest respect. She becomes greatly infatuated with Dandy Jack, who is considered by all as her sweetheart. Jack decides to leave the camp for other diggings, and the little one is almost heartbroken. As he is leaving, he meets Bob, his old chum, who has just arrived at the camp. Their greeting shows clearly the value of that little word \"friends.\" Later on, Bob comes to the Inn and falls deeply in love with the little orphan, who has realized by this time that her feeling for Jack was infatuation rather than love. Hence she and Bob are engaged to be married. Shortly before the day set for the wedding, Jack returns and is twitted by the boys about the apparently fickle girl, whereupon he wagers that he can win her back, not knowing, of course, ...",
+      "country": "USA",
+      "language": "English",
+      "metascore": "0",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDlmYzgwZmItNzdlMS00ZmE5LThkYmUtYmNhNjAyY2FlMmFiXkEyXkFqcGdeQXVyMTYxNjkxOQ@@._V1_UY268_CR5,0,182,268_AL_.jpg",
+      "rating": "5.6",
+      "votes": "170",
+      "budget": "N/A",
+      "opening_weekend": "N/A",
+      "gross": "N/A",
+      "production": "Biograph Company",
+      "type": "",
+      "status": "true",
+      "id": "tt0002197",
+      "name": "Friends"
+    },
+    {
+      "imdb_id": "tt0203247",
+      "title": "Avengers",
+      "year": "2017",
+      "rated": "",
+      "released": "30 October 1999 (France)",
+      "runtime": "30 min",
+      "genre": "Animation, Action, Adventure",
+      "director": "",
+      "writers": "Jack Kirby , Stan Lee",
+      "actors": "Linda Ballantyne , Tony Daniels , Ron Rubin",
+      "plot": "This series tells the stories of Marvel Comics greatest general membership superhero teams (as opposed to a family organization like the Fantastic Four or a minority group organization like the X-Men). Led by Hank Pym as Ant-Man and Janet van Dyne as the Wasp, they fight evil around the world and beyond against threats like Ultron.",
+      "country": "France",
+      "language": "English",
+      "metascore": "0",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDg0MzM1MWQtMDI3ZC00NDY4LTk4MjYtMjdjNDZlNzk3MTY5XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UY268_CR4,0,182,268_AL_.jpg",
+      "rating": "5.6",
+      "votes": "527",
+      "budget": "N/A",
+      "opening_weekend": "N/A",
+      "gross": "N/A",
+      "production": "Marvel Enterprises, Saban Entertainment",
+      "type": "series",
+      "status": "true",
+      "id": "tt0203247",
+      "name": "Avengers"
     }
   ]
 }

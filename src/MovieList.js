@@ -12,13 +12,15 @@ function MovieList(props){
                 
                 <div className="movies-container">
                 { movies.length > 0
-                   ? movies.map((movie, index) =>
+                   ? movies.map((movie) =>
                     <MovieItem
                         title={movie.name}
+                        url={movie.poster}
                         year={movie.year}
-                        description={movie.description}
-                        key={index} 
+                        plot={movie.plot}
+                        key={movie.id} 
                         deleteMovie={deleteMovie}
+                        id={movie.id}
                         />
                     )
                     : "No movies found"}

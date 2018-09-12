@@ -35,6 +35,7 @@ class SearchBar extends React.Component {
     }
 
     addMovie = movie => {
+        this.setState({ results: [], searchTerm: '' })
         this.props.addMovie(movie);
     }
 

@@ -14,8 +14,19 @@ class App extends Component {
 
   componentDidMount() {
     getMovies().then(response => {
+        console.log(response.data)
         this.setState({ movies: response.data })
       })
+  }
+
+  deleteMovie = (id) => {
+    deleteMovie(id).then(() => {
+      const { movies } = this.state;
+      const filtered = movies.filter(m => m.id !== id)
+      this.setState({
+        movies: filtered
+      })
+    })
   }
 
   addMovie = (movie) => {
@@ -31,15 +42,10 @@ class App extends Component {
     })
   }
 
-  deleteMovie = (movie) => {
-    console.log(movie)
-  }
-
   render() {
     return (
       <div>
         <Header />
-        
         <MovieList 
           movies={this.state.movies} 
           addMovie={this.addMovie}

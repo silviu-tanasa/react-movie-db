@@ -43,11 +43,12 @@ class App extends Component {
   }
 
   render() {
+    const { movies } = this.state
     return (
       <div>
         <Header />
         <MovieList 
-          movies={this.state.movies} 
+          movies={movies} 
           addMovie={this.addMovie}
           deleteMovie={this.deleteMovie}
           />

@@ -25,7 +25,7 @@ export default class UserRating extends Component{
     onMouseLeave(ev, el) {}
 
     render() {
-        const numStars = this.props
+        const numStars = this.props;
         return (
             <div>
                 User Rating

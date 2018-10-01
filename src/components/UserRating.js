@@ -4,7 +4,11 @@ import { Icon } from '../../node_modules/@material-ui/core';
 
 const Star = (props) => {
     return(
-        <span><Icon>{props.selected ? 'star_border' : 'star'}</Icon></span>
+        <span onClick={props.onClick}
+              onMouseEnter={props.onMouseEnter}
+              onMouseLeave={props.onMouseLeave}>
+            <Icon>{props.selected ? 'star_border' : 'star'}</Icon>
+        </span>
     )
 }
 
@@ -15,7 +19,7 @@ export default class UserRating extends Component{
         const stars = [...Array(props.numStars)].map((el, i) => {
             return {
                 id: i,
-                selected: false
+                selected: true
             }
         })
         this.state = { stars: stars }
@@ -36,6 +40,7 @@ export default class UserRating extends Component{
                             index={i}
                             onMouseEnter={() => console.log('mouse enter')}
                             onMouseLeave={() => console.log('mouse leave')}
+                            onClick={() => console.log('clicked')}
                         />
                     ))}
                 </p>
